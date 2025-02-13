@@ -1,59 +1,72 @@
-*{
+* {
     margin: 0;
     padding: 0;
     cursor: pointer;
     user-select: none;
 }
 
-body{
-    background-color: #637081;
+body {
+    background-color: #8338ec;
     font-family: Arial, Helvetica, sans-serif;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
-h1{
-    color: #ACCBE1;
+
+h1 {
+    color: #FCFFF7;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
     position: relative;
 }
-.gameboard{
-    display: flex;
-    height: 60vh;
-    width: 60vh;
-    background-color: #ACCBE1;
-    border-radius: 1rem ;
-    flex-wrap: wrap;
-    padding: 1rem;
+
+.board-center {
+    height: 100vh;
+    padding: 5px;
 }
-.box{
-    height: 19vh;
-    width: 19vh;
-    border:0.5vh solid #ACCBE1 ;
-    background-color: #536B78;
-    border-radius: 1rem;
+
+.gameboard {
+    display: flex;
+    height: 60vmin;
+    width: 60vmin;
+    background-color: #ACCBE1;
+    border-radius: 2vmin;
+    flex-wrap: wrap;
+    padding: 1vmin;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    height: 19vmin;
+    width: 19vmin;
+    border: 0.5vmin solid #ACCBE1;
+    background-color: #2a9d8f;
+    border-radius: 2vmin;
     font-size: 15vmin;
     color: #CEE5F2;
     line-height: 1.2;
 }
 
-.reset{
-    padding: 10px;;
+.reset {
+    padding: 1vmin 2.5vmin;
     background-color: #ACCBE1;
-    margin: 1rem;
+    margin: 1vmin;
     width: max-content;
-    border-radius:0.5rem;
+    border-radius: 5vmin;
     color: #536B78;
 }
-#win-msg{
+
+#win-msg {
     height: 100vh;
     width: 100%;
-    background-color: #536b78d6;
+    background-color: #8338ecb7;
     position: fixed;
     top: 0px;
     display: none;
@@ -61,26 +74,32 @@ h1{
     align-items: center;
     flex-direction: column;
 }
-#win-text{
+
+#win-text {
     font-size: 15vmin;
     color: #CEE5F2;
-    background-color: #637081;
+    background-color: #d90427;
     width: 100%;
 }
-.flex-center{
+
+.flex-center {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-#turn-text{
-    color:#CEE5F2 ;
+
+#turn-text {
+    color: #CEE5F2;
+    font-size: 4vmin;
 }
-.box:hover{
+
+.box:hover {
     transform: scale(1.025);
 }
-.reset:hover{
-    background-color: #536B78;
+
+.reset:hover {
+    background-color: #e63946;
     color: #CEE5F2;
     outline: #ACCBE1 solid 1px;
 }
